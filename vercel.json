@@ -8,8 +8,44 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/(.*)",
       "dest": "server.js"
+    },
+    {
+      "src": "/admin/(.*)",
+      "dest": "server.js"
+    },
+    {
+      "src": "/uploads/(.*)",
+      "dest": "server.js"
+    },
+    {
+      "src": "/images/(.*)",
+      "dest": "/images/$1"
+    },
+    {
+      "src": "/video/(.*)",
+      "dest": "/video/$1"
+    },
+    {
+      "src": "/style.css",
+      "dest": "/style.css"
+    },
+    {
+      "src": "/animations.js",
+      "dest": "/animations.js"
+    },
+    {
+      "src": "/api.js",
+      "dest": "/api.js"
+    },
+    {
+      "src": "/(.*\\.(js|css|png|jpg|webp|svg|ico|mp4|woff2|woff|ttf))",
+      "dest": "/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 }
