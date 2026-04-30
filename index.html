@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muttakin Rahman | MERN Stack Web Developer</title>
+    <meta name="description"
+        content="Muttakin Rahman is a professional MERN Stack Web Developer helping startups and businesses build modern, scalable web applications. Explore my portfolio for expert full-stack development solutions.">
+    <!-- Fonts: Inter and Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="image" href="images/hero.webp" type="image/webp">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Manrope:wght@500&family=Outfit:wght@400;500;600;700;800&family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/kawsar-ahmed-favicon.png">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Schema.org Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Muttakin Rahman",
+      "jobTitle": "MERN Stack Web Developer",
+      "description": "Professional MERN Stack Web Developer helping startups and businesses build modern, scalable web applications."
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation Bar (outside main-container for proper z-index stacking) -->
+    <div class="navbar-wrapper">
+        <nav class="navbar">
+            <a href="#home" class="logo">
+                <img src="images/logo.svg.png" alt="Muttakin Rahman Logo" width="200" height="48">
+            </a>
+
+            <!-- Mobile Menu Button -->
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#service">Service</a></li>
+                <li><a href="#highlights">Portfolio</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Connect</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="#contact" class="btn-outline-glow">Get in Touch</a>
+                <img src="images/nav-arrow.svg" alt="" class="nav-arrow">
+            </div>
+        </nav>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+
+        <!-- Background Glow Effects -->
+        <div class="bg-glow glow-top-left"></div>
+        <div class="bg-glow glow-bottom-right"></div>
+        <div class="bg-glow glow-center-purple"></div>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+
+            <!-- Left Content: Text & CTA -->
+            <div class="hero-content">
+                <div class="availability-badge">
+                    <span class="rocket">🚀</span>
+                    MERN Stack Developer | Full-Stack Specialist
+                </div>
+
+                <h1 class="hero-title reveal">
+                    Building Powerful<br>
+                    Web Apps That<br>
+                    Scale & Perform.
+                </h1>
+
+                <p class="hero-description reveal" data-delay="0.2s">
+                    MERN Stack Developer helping startups and businesses<br>
+                    build modern, scalable full-stack web applications.
+                </p>
+
+                <div class="hero-actions reveal" data-delay="0.4s">
+                    <a href="#contact" class="btn-primary">Start a Project</a>
+                    <a href="https://github.com/" target="_blank" class="btn-outline">
+                        <i class="ph ph-github-logo"></i>
+                        Latest Work
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Content: Profile Image -->
+            <div class="hero-image-wrapper">
+                <img src="images/figma-icon.svg" alt="Code" class="figma-blur-bg" loading="lazy">
+                <img src="images/hero.webp" alt="Muttakin Rahman MERN Stack Web Developer portrait" class="hero-image" fetchpriority="high" width="600"
+                    height="600">
+            </div>
+
+        </section>
+
+    </div>
+
+    <!-- Portfolio Marquee Section -->
+    <section class="portfolio-marquee">
+        <div class="marquee-row marquee-left">
+            <div class="marquee-content" id="marquee-content-1">
+                <img src="images/projects/project-1.png" alt="E-commerce full-stack web app project preview" loading="lazy">
+                <img src="images/projects/project-2.png" alt="Healthcare management dashboard web application" loading="lazy">
+                <img src="images/projects/project-3.png" alt="Real estate listing platform web development" loading="lazy">
+                <img src="images/projects/project-4.png" alt="Restaurant ordering system web app" loading="lazy">
+                <img src="images/projects/project-5.png" alt="Finance analytics web application" loading="lazy">
+            </div>
+            <!-- Duplicate for seamless scroll -->
+            <div class="marquee-content" aria-hidden="true">
+                <img src="images/projects/project-1.png" alt="E-commerce full-stack web app project preview" loading="lazy">
+                <img src="images/projects/project-2.png" alt="Healthcare management dashboard web application" loading="lazy">
+                <img src="images/projects/project-3.png" alt="Real estate listing platform web development" loading="lazy">
+                <img src="images/projects/project-4.png" alt="Restaurant ordering system web app" loading="lazy">
+                <img src="images/projects/project-5.png" alt="Finance analytics web application" loading="lazy">
+            </div>
+        </div>
+
+        <div class="marquee-row marquee-right">
+            <div class="marquee-content" id="marquee-content-2">
+                <img src="images/projects/project-6.png" alt="SaaS product web application development" loading="lazy">
+                <img src="images/projects/project-7.png" alt="Business management system web app" loading="lazy">
+                <img src="images/projects/project-8.png" alt="Social media platform full-stack development" loading="lazy">
+                <img src="images/projects/project-9.png" alt="Project 9" loading="lazy">
+                <img src="images/projects/project-10.png" alt="Project 10" loading="lazy">
+                <img src="images/projects/project-11.png" alt="Project 11" loading="lazy">
+            </div>
+            <!-- Duplicate for seamless scroll -->
+            <div class="marquee-content" aria-hidden="true">
+                <img src="images/projects/project-6.png" alt="SaaS product web application development" loading="lazy">
+                <img src="images/projects/project-7.png" alt="Business management system web app" loading="lazy">
+                <img src="images/projects/project-8.png" alt="Social media platform full-stack development" loading="lazy">
+                <img src="images/projects/project-9.png" alt="Project 9" loading="lazy">
+                <img src="images/projects/project-10.png" alt="Project 10" loading="lazy">
+                <img src="images/projects/project-11.png" alt="Project 11" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section (Embedded) -->
+    <section id="service" class="embedded-services">
+        <div class="container container-services">
+            <div class="main-content main-content-services">
+
+                <div class="left-side">
+                    <div class="badge">WHAT I DO</div>
+
+                    <h1 class="services-h1 reveal">
+                        Digital Service to<br>
+                        Grow <span class="highlight-wrapper">
+                            <span class="highlight-text">Your Business.</span>
+                            <svg class="sparkle-icon" viewBox="0 0 32 32" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 18 C 8 13 7 8 6 4" stroke="white" stroke-width="2.5"
+                                    stroke-linecap="round" />
+                                <path d="M14 21 C 18 16 20 10 24 4" stroke="white" stroke-width="2.5"
+                                    stroke-linecap="round" />
+                                <path d="M19 25 C 25 24 30 19 33 14" stroke="white" stroke-width="2.5"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </span>
+                    </h1>
+
+                    <p class="description reveal" data-delay="0.2s">
+                        I provide full-stack web development, REST API design, database architecture, and scalable
+                        MERN stack solutions to help businesses build powerful digital products.
+                    </p>
+
+                    <div class="image-section reveal" data-delay="0.4s">
+
+                        <div class="image-wrapper">
+                            <img src="images/services/image.webp" class="services-local-image" alt="Muttakin Rahman working on MERN stack web development project on laptop"
+                                loading="lazy">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-side">
+
+                    <div class="service-card reveal" data-delay="0.1s">
+                        <div class="card-content-wrapper">
+                            <div class="card-info">
+                                <div class="card-icon">
+                                    <img src="images/services/Web &amp; Mobile App.svg"
+                                        style="width: 100%; height: 100%; object-fit: contain;" alt="Service Icon">
+                                </div>
+                                <div class="card-text">
+                                    <h3>Full-Stack Web Development</h3>
+                                    <p>End-to-end MERN stack apps — from backend APIs to frontend UIs.</p>
+                                </div>
+                            </div>
+                            <div class="arrow-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="9 7 17 7 17 15"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" data-delay="0.1s">
+                        <div class="card-content-wrapper">
+                            <div class="card-info">
+                                <div class="card-icon">
+                                    <img src="images/services/Development.svg"
+                                        style="width: 100%; height: 100%; object-fit: contain;" alt="Service Icon">
+                                </div>
+                                <div class="card-text">
+                                    <h3>REST API & Backend Development</h3>
+                                    <p>Scalable Node.js & Express APIs with MongoDB database design.</p>
+                                </div>
+                            </div>
+                            <div class="arrow-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="9 7 17 7 17 15"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" data-delay="0.1s">
+                        <div class="card-content-wrapper">
+                            <div class="card-info">
+                                <div class="card-icon">
+                                    <img src="images/services/UX &amp; UI Design.svg"
+                                        style="width: 100%; height: 100%; object-fit: contain;" alt="Service Icon">
+                                </div>
+                                <div class="card-text">
+                                    <h3>React Frontend Development</h3>
+                                    <p>Fast, interactive UIs using React.js with modern state management.</p>
+                                </div>
+                            </div>
+                            <div class="arrow-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="9 7 17 7 17 15"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="service-card reveal" data-delay="0.1s">
+                        <div class="card-content-wrapper">
+                            <div class="card-info">
+                                <div class="card-icon">
+                                    <img src="images/services/Design &amp; Creative.svg"
+                                        style="width: 100%; height: 100%; object-fit: contain;" alt="Service Icon">
+                                </div>
+                                <div class="card-text">
+                                    <h3>E-Commerce & SaaS Development</h3>
+                                    <p>Complete e-commerce platforms and SaaS products built to scale.</p>
+                                </div>
+                            </div>
+                            <div class="arrow-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                                    <polyline points="9 7 17 7 17 15"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-tags">
+                        <div class="bottom-tags-track">
+                            <!-- Original Set -->
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>React.js</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Node.js</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>MongoDB</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Express.js</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>REST API</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Next.js</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>JWT Auth</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Tailwind CSS</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Redux Toolkit</div>
+
+                            <!-- Duplicate for Seamless Scroll -->
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>React.js</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Node.js</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>MongoDB</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Express.js</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>REST API</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Next.js</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>JWT Auth</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Tailwind CSS</div>
+                            <div class="tag"><svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 2.5c1 5 4.5 8.5 9.5 9.5-5 1-8.5 4.5-9.5 9.5-1-5-4.5-8.5-9.5-9.5 5-1 8.5-4.5 9.5-9.5z" />
+                                </svg>Redux Toolkit</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="highlights-section" id="highlights">
+        <div class="highlights-header">
+            <h2 class="highlights-title reveal">
+                Highlights
+                <span class="highlights-highlight">
+                    Projects
+                    <svg class="spark-svg" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 18 C 8 13 7 8 6 4" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M14 21 C 18 16 20 10 24 4" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M19 25 C 25 24 30 19 33 14" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                    </svg>
+                </span>
+            </h2>
+        </div>
+
+        <div class="highlights-grid" id="dynamic-highlights">
+            <!-- Card 1 -->
+            <a href="https://github.com/"
+                target="_blank" class="highlight-card" style="text-decoration: none;">
+                <div class="highlight-image-wrapper">
+                    <img src="images/highlights/image1.webp" alt="E-commerce MERN stack full-stack web application" loading="lazy">
+                </div>
+                <div class="highlight-content">
+                    <h3 class="highlight-title">Full-Stack E-Commerce Platform</h3>
+                    <div class="highlight-tags">
+                        <span class="highlight-tag">React.js</span>
+                        <span class="highlight-tag">Node.js</span>
+                        <span class="highlight-tag">MongoDB</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 2 -->
+            <a href="https://github.com/"
+                target="_blank" class="highlight-card" style="text-decoration: none;">
+                <div class="highlight-image-wrapper">
+                    <img src="images/highlights/image2.webp" alt="SaaS project management dashboard web application" loading="lazy">
+                </div>
+                <div class="highlight-content">
+                    <h3 class="highlight-title">SaaS Project Management Dashboard</h3>
+                    <div class="highlight-tags">
+                        <span class="highlight-tag">Next.js</span>
+                        <span class="highlight-tag">Express.js</span>
+                        <span class="highlight-tag">SaaS</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Card 3 -->
+            <div class="highlight-card reveal">
+                <div class="highlight-image-wrapper">
+                    <img src="images/highlights/image3.webp" alt="Real-time chat application full-stack development" loading="lazy">
+                </div>
+                <div class="highlight-content">
+                    <h3 class="highlight-title">Real-Time Chat Application</h3>
+                    <div class="highlight-tags">
+                        <span class="highlight-tag">Socket.io</span>
+                        <span class="highlight-tag">Node.js</span>
+                        <span class="highlight-tag">React</span>
+                        <span class="highlight-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="highlight-card reveal">
+                <div class="highlight-image-wrapper">
+                    <img src="images/highlights/image4.webp" alt="Healthcare appointment system REST API backend" loading="lazy">
+                </div>
+                <div class="highlight-content">
+                    <h3 class="highlight-title">Healthcare Appointment System</h3>
+                    <div class="highlight-tags">
+                        <span class="highlight-tag">REST API</span>
+                        <span class="highlight-tag">JWT Auth</span>
+                        <span class="highlight-tag">Healthcare</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="https://github.com/" target="_blank" class="explore-btn">Explore All Projects</a>
+    </section>
+
+    <!-- From Code to Deployment Section (replaces "Idea to Interface") -->
+    <section class="idea-section" id="process">
+        <div class="idea-header reveal">
+            <h2><span class="idea-from">From </span><span class="idea-highlight"><span class="idea-text-main">Code to
+                    </span><span class="idea-text-accent">Deployment</span><svg width="32" height="32"
+                        viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" class="idea-sparkle">
+                        <path d="M8 18 C 8 13 7 8 6 4" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M14 21 C 18 16 20 10 24 4" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                        <path d="M19 25 C 25 24 30 19 33 14" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                    </svg></span></h2>
+            <p>A structured development process that transforms requirements into production-ready web applications.</p>
+        </div>
+
+        <div class="idea-grid">
+            <!-- Card 1 -->
+            <div class="idea-card">
+                <div class="idea-number">01</div>
+                <img src="images/From Idea icon/icon1.svg" alt="Requirements Icon" class="idea-icon">
+                <h3 class="idea-title">Requirements</h3>
+                <p class="idea-desc">I analyze your business goals,<br>technical requirements, and<br>define project
+                    scope.</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="idea-card reveal">
+                <div class="idea-number">02</div>
+                <img src="images/From Idea icon/icon2.svg" alt="Architecture Icon" class="idea-icon">
+                <h3 class="idea-title">Architecture</h3>
+                <p class="idea-desc">I plan database schema,<br>API structure, and system<br>architecture for
+                    scalability.</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="idea-card reveal">
+                <div class="idea-number">03</div>
+                <img src="images/From Idea icon/icon3.svg" alt="Backend Development Icon" class="idea-icon">
+                <h3 class="idea-title">Backend Dev</h3>
+                <p class="idea-desc">I build secure REST APIs with<br>Node.js, Express & MongoDB<br>for robust data
+                    handling.</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="idea-card reveal">
+                <div class="idea-number">04</div>
+                <img src="images/From Idea icon/icon4.svg" alt="Frontend Development Icon" class="idea-icon">
+                <h3 class="idea-title">Frontend Dev</h3>
+                <p class="idea-desc">I craft responsive React UIs<br>with smooth interactions<br>and great user
+                    experience.</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="idea-card reveal">
+                <div class="idea-number">05</div>
+                <img src="images/From Idea icon/icon5.svg" alt="Testing Icon" class="idea-icon">
+                <h3 class="idea-title">Testing & QA</h3>
+                <p class="idea-desc">I test APIs, fix bugs and<br>ensure the app works perfectly<br>across all
+                    devices.</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="idea-card reveal">
+                <div class="idea-number">06</div>
+                <img src="images/From Idea icon/icon6.svg" alt="Deployment Icon" class="idea-icon">
+                <h3 class="idea-title">Deployment</h3>
+                <p class="idea-desc">I deploy to cloud platforms<br>with CI/CD pipelines and<br>provide ongoing
+                    support.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-header-container">
+            <div class="testimonials-header reveal">
+                <h2>Testimonials That<br>Speak to <span class="testimonials-highlight">My Results<svg width="32"
+                            height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            class="testimonials-sparkle">
+                            <path d="M8 18 C 8 13 7 8 6 4" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                            <path d="M14 21 C 18 16 20 10 24 4" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <path d="M19 25 C 25 24 30 19 33 14" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" />
+                        </svg></span></h2>
+            </div>
+            <div class="testimonials-nav">
+                <button class="nav-btn prev-btn"><i class="ph ph-caret-left"></i></button>
+                <button class="nav-btn next-btn"><i class="ph ph-caret-right"></i></button>
+            </div>
+        </div>
+
+        <div class="testimonials-slider-container" id="dynamic-testimonials">
+            <div class="testimonial-slider-track">
+                <!-- Slide 1 -->
+                <div class="testimonial-slide active">
+                    <img src="images/review1.png" alt="5-star review" loading="lazy">
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="testimonial-slide next">
+                    <img src="images/review2.png" alt="5-star review" loading="lazy">
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="testimonial-slide prev">
+                    <img src="images/review3.png" alt="5-star review" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <div class="container-contact">
+            <!-- Mobile-Only Header -->
+            <div class="contact-header-section">
+                <span class="contact-badge">Get In Touch</span>
+                <h2>Tell Me <span class="contact-highlight-wrapper">Your<svg class="contact-sparkle" width="32"
+                            height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 18 C 8 13 7 8 6 4" stroke="white" stroke-width="2.5" stroke-linecap="round" />
+                            <path d="M14 21 C 18 16 20 10 24 4" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" />
+                            <path d="M19 25 C 25 24 30 19 33 14" stroke="white" stroke-width="2.5"
+                                stroke-linecap="round" />
+                        </svg></span><br><span class="h2-gradient">Project Idea</span></h2>
+            </div>
+            <div class="contact-grid">
+
+                <!-- Left Info Card -->
+                <div class="contact-info-card">
+                    <div class="status-badge">
+                        <span class="dot"></span>
+                        Available for Freelance Projects
+                    </div>
+
+                    <div class="portrait-section">
+                        <div class="circular-frame">
+                            <img src="images/sayed.jpg" alt="Muttakin Rahman MERN Stack Web Developer profile photo" class="contact-portrait"
+                                loading="lazy">
+
+                            <!-- Label Tags -->
+                            <div class="label-tag ux">React.js</div>
+                            <div class="label-tag ui">Node.js</div>
+                            <div class="label-tag web">MongoDB</div>
+
+                            <!-- Dotted Circle -->
+                            <div class="dotted-circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="contact-info-text reveal">
+                        <h2>Let's Build Something</h2>
+                        <h2 class="h2-gradient">Remarkable Together</h2>
+                    </div>
+
+                    <a href="#" class="consultation-btn">Book a Free Consultation</a>
+
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Clients</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Years Exp.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Contact Form -->
+                <div class="contact-form-container reveal" data-delay="0.2s">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group full-width">
+                            <label>Full Name</label>
+                            <input type="text" name="full_name" placeholder="Enter Your Name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Your Email</label>
+                                <input type="email" name="email" placeholder="Enter Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Whatsapp Number</label>
+                                <input type="text" name="whatsapp" placeholder="Enter Your Whatsapp Number">
+                            </div>
+                        </div>
+
+                        <div class="selection-section">
+                            <p class="selection-label">Interested in...</p>
+                            <input type="hidden" name="interested_in" id="interestedIn">
+                            <div class="selection-pills" data-target="interestedIn">
+                                <button type="button" class="pill">Full-Stack Development</button>
+                                <button type="button" class="pill">REST API</button>
+                                <button type="button" class="pill">React Frontend</button>
+                                <button type="button" class="pill">E-Commerce</button>
+                                <button type="button" class="pill">SaaS Development</button>
+                            </div>
+                        </div>
+
+                        <div class="selection-section">
+                            <p class="selection-label">Project Budget (USD)</p>
+                            <input type="hidden" name="budget" id="budgetInput">
+                            <div class="selection-pills" data-target="budgetInput">
+                                <button type="button" class="pill">$100-$500</button>
+                                <button type="button" class="pill">$500-$1K</button>
+                                <button type="button" class="pill">$1K-$2K</button>
+                                <button type="button" class="pill">$2K-$5K</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label>Tell me More About Your Project</label>
+                            <textarea name="project_details" placeholder="Something about your great idea"></textarea>
+                        </div>
+
+                        <!-- Form Messages -->
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+
+                        <button type="submit" class="submit-btn">Start Your Project</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-icon">
+                <img src="images/Group.svg" alt="Handshake" width="95" height="55">
+            </div>
+            <h2 class="cta-heading reveal">Ready to start<br><span class="cta-highlight">Your next project?</span></h2>
+            <p class="cta-description">If you have an idea for a web app, API, or SaaS product — let's talk. I'm
+                always open to collaborating on ambitious and impactful projects.</p>
+            <div class="cta-buttons">
+                <a href="mailto:muttakinrahman@gmail.com" class="cta-btn-primary" id="dynamic-email">Email Me</a>
+                <a href="https://wa.me/+8801700000000" target="_blank" class="cta-btn-outline" id="dynamic-whatsapp">WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <a href="#home">
+                        <img src="images/logo.svg.png" alt="Muttakin Rahman Logo" width="200" height="48">
+                    </a>
+                </div>
+                <nav class="footer-nav">
+                    <h4 class="footer-mobile-title">Navigation</h4>
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#highlights">Portfolio</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Connect</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-socials">
+                    <h4 class="footer-mobile-title">Follow Me on</h4>
+                    <div class="social-links-container">
+                        <a href="https://github.com/" target="_blank" aria-label="GitHub">
+                            <img src="images/footer icon/Social icon.png" alt="GitHub">
+                            <span class="social-label">GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                            <img src="images/footer icon/linkdin.png" alt="LinkedIn">
+                            <span class="social-label">LinkedIn</span>
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook">
+                            <img src="images/footer icon/facebook.png" alt="Facebook">
+                            <span class="social-label">Facebook</span>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram">
+                            <img src="images/footer icon/instagram.png" alt="Instagram">
+                            <span class="social-label">Instagram</span>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" aria-label="Twitter">
+                            <img src="images/footer icon/twitter.png" alt="Twitter">
+                            <span class="social-label">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-divider"></div>
+            <div class="footer-bottom">
+                <p>© 2026, Muttakin Rahman All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="custom-cursor-dot"></div>
+
+    <!-- Animation Script -->
+    <script src="api.js"></script>
+    <script src="animations.js"></script>
+
+    <!-- Sticky Navbar on Scroll -->
+    <script>
+        (function () {
+            const navbar = document.querySelector('.navbar');
+            if (!navbar) return;
+
+            let lastScrollY = 0;
+            const scrollThreshold = 100;
+
+            window.addEventListener('scroll', function () {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > scrollThreshold) {
+                    if (!navbar.classList.contains('navbar-sticky')) {
+                        navbar.classList.add('navbar-sticky');
+                    }
+                } else {
+                    navbar.classList.remove('navbar-sticky');
+                }
+
+                lastScrollY = currentScrollY;
+            });
+        })();
+    </script>
+
+    <!-- Pill Toggle Script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const pillGroups = document.querySelectorAll('.selection-pills');
+            pillGroups.forEach(group => {
+                const pills = group.querySelectorAll('.pill');
+                const targetId = group.getAttribute('data-target');
+                const hiddenInput = targetId ? document.getElementById(targetId) : null;
+
+                pills.forEach(pill => {
+                    pill.addEventListener('click', function () {
+                        pills.forEach(p => p.classList.remove('active'));
+                        this.classList.add('active');
+                        // Store selected value in hidden input
+                        if (hiddenInput) {
+                            hiddenInput.value = this.textContent.trim();
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <!-- Submit Button Active State + AJAX Form Submission -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactForm = document.getElementById('contactForm');
+            if (!contactForm) return;
+
+            const submitBtn = contactForm.querySelector('.submit-btn');
+            const inputs = contactForm.querySelectorAll('input:not([type="hidden"]), textarea');
+            const formMessage = document.getElementById('formMessage');
+            // AJAX Form Submission
+            contactForm.addEventListener('submit', async function (e) {
+                e.preventDefault();
+
+                // Disable button and show loading
+                submitBtn.disabled = true;
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Sending...';
+
+                // Hide any previous message
+                formMessage.style.display = 'none';
+
+                try {
+                    const formData = new FormData(contactForm);
+                    const response = await fetch('submit_form.php', {
+                        method: 'POST',
+                        body: formData
+                    });
+
+                    const result = await response.json();
+
+                    // Show message
+                    formMessage.style.display = 'block';
+                    formMessage.textContent = result.message;
+
+                    if (result.success) {
+                        formMessage.className = 'form-message success';
+                        contactForm.reset();
+                        // Remove active class from all pills
+                        document.querySelectorAll('.pill.active').forEach(p => p.classList.remove('active'));
+                    } else {
+                        formMessage.className = 'form-message error';
+                    }
+                } catch (error) {
+                    formMessage.style.display = 'block';
+                    formMessage.className = 'form-message error';
+                    formMessage.textContent = 'Something went wrong. Please try again later.';
+                } finally {
+                    submitBtn.disabled = false;
+                    submitBtn.textContent = originalText;
+                }
+            });
+        });
+    </script>
+
+    <!-- Custom Script for Video Playback -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const testimonialCards = document.querySelectorAll('.testimonial-card');
+
+            testimonialCards.forEach(card => {
+                const video = card.querySelector('.testimonial-hover-video');
+
+                if (video) {
+                    const stopAllOthers = () => {
+                        document.querySelectorAll('.testimonial-hover-video').forEach(v => {
+                            if (v !== video) {
+                                v.pause();
+                                v.currentTime = 0;
+                                v.closest('.testimonial-card').classList.remove('is-playing', 'is-manual-playing');
+                            }
+                        });
+                    };
+
+                    card.addEventListener('mouseenter', () => {
+                        stopAllOthers();
+                        video.muted = false; // Attempt sound on hover
+                        video.play().catch(e => {
+                            // Fallback to muted if browser blocks sound
+                            video.muted = true;
+                            video.play().catch(err => console.log("Muted hover play failed:", err));
+                        });
+                        card.classList.add('is-playing');
+                    });
+
+                    card.addEventListener('mouseleave', () => {
+                        if (!card.classList.contains('is-manual-playing')) {
+                            video.pause();
+                            video.currentTime = 0;
+                            card.classList.remove('is-playing');
+                        }
+                    });
+
+                    card.addEventListener('click', () => {
+                        stopAllOthers();
+                        video.muted = false;
+                        video.currentTime = 0;
+                        video.play().catch(e => console.log("Click play error:", e));
+                        card.classList.add('is-playing', 'is-manual-playing');
+                    });
+                }
+            });
+
+            // Testimonials Slider Navigation
+            const grid = document.querySelector('.testimonials-grid');
+            const prevBtn = document.querySelector('.prev-btn');
+            const nextBtn = document.querySelector('.next-btn');
+
+            if (grid && prevBtn && nextBtn) {
+                prevBtn.addEventListener('click', () => {
+                    grid.scrollBy({
+                        left: -320,
+                        behavior: 'smooth'
+                    });
+                });
+
+                nextBtn.addEventListener('click', () => {
+                    grid.scrollBy({
+                        left: 320,
+                        behavior: 'smooth'
+                    });
+                });
+            }
+
+            // Mobile Menu Toggle
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+            const navbar = document.querySelector('.navbar');
+
+            if (mobileBtn && navbar) {
+                mobileBtn.addEventListener('click', () => {
+                    navbar.classList.toggle('menu-open');
+                });
+
+                // Close menu when clicking a link
+                const navLinks = document.querySelectorAll('.nav-links a');
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        navbar.classList.remove('menu-open');
+                    });
+                });
+            }
+
+        });
+    </script>
+</body>
+
+</html>
