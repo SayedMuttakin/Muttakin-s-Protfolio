@@ -8,13 +8,15 @@
     { "src": "api.js", "use": "@vercel/static" },
     { "src": "images/**", "use": "@vercel/static" },
     { "src": "uploads/**", "use": "@vercel/static" },
+    { "src": "video/**", "use": "@vercel/static" },
     { "src": "admin/index.html", "use": "@vercel/static" },
     { "src": "admin/app.js", "use": "@vercel/static" }
   ],
   "routes": [
     { "src": "/api/(.*)", "dest": "/api/index.js" },
+    { "src": "/admin/app.js", "dest": "/admin/app.js" },
+    { "src": "/admin/?", "dest": "/admin/index.html" },
     { "handle": "filesystem" },
-    { "src": "/admin", "dest": "/admin/index.html" },
     { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
