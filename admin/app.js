@@ -1,7 +1,8 @@
 // Dynamic API URL — points to backend (port 5000) regardless of which server opens admin panel
-const API_URL = window.location.port === '5000'
-    ? `${window.location.protocol}//${window.location.host}/api`
-    : 'http://localhost:5000/api';
+const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? `http://${window.location.hostname}:5000/api`
+    : '/api';
+
 
 // DOM Elements
 const loginView = document.getElementById('loginView');
