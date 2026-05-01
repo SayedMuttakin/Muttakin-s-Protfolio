@@ -123,9 +123,42 @@ app.post('/api/admin/login', wrap(async (req, res) => {
 // ─── IMAGE UPLOAD ─────────────────────────────────────────────────
 app.post('/api/admin/upload', verifyToken, upload.single('image'), (req, res) => {
     if (!req.file) return res.status(400).json({ error: 'No file uploaded' });
-    const fileUrl = `${req.protocol}://${req.get('host')}/uploads/${req.file.filename}`;
+    // Use relative URL so it works on both localhost and production (Vercel)
+    const fileUrl = `/uploads/${req.file.filename}`;
     res.json({ url: fileUrl, filename: req.file.filename });
 });
+
+// ─── MIGRATION: Fix localhost URLs in DB ─────────────────────────
+app.get('/api/admin/migrate-urls', verifyToken, async (req, res) => {
+    try {
+        const fix = (url) => url ? url.replace(/https?:\/\/[^/]+\/uploads\//, '/uploads/') : url;
+        const projects = await Project.find();
+        for (const p of projects) {
+            if (p.imageUrl && p.imageUrl.includes('localhost')) {
+                p.imageUrl = fix(p.imageUrl);
+                await p.save();
+            }
+        }
+        const testimonials = await Testimonial.find();
+        for (const t of testimonials) {
+            if (t.imageUrl && t.imageUrl.includes('localhost')) {
+                t.imageUrl = fix(t.imageUrl);
+                await t.save();
+            }
+        }
+        const sliders = await SliderImage.find();
+        for (const s of sliders) {
+            if (s.imageUrl && s.imageUrl.includes('localhost')) {
+                s.imageUrl = fix(s.imageUrl);
+                await s.save();
+            }
+        }
+        res.json({ success: true, message: 'All URLs migrated to relative paths!' });
+    } catch (err) {
+        res.status(500).json({ error: err.message });
+    }
+});
+
 
 // ─── SETTINGS ─────────────────────────────────────────────────────
 app.get('/api/settings', wrap(async (req, res) => {
