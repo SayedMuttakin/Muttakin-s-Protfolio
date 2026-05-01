@@ -1,14 +1,10 @@
 {
-  "version": 2,
-  "buildCommand": "echo 'No build needed'",
-  "outputDirectory": ".",
-  "framework": null,
   "functions": {
     "api/index.js": {
       "maxDuration": 10
     }
   },
   "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/index.js" }
+    { "source": "/api/:path*", "destination": "/api/index" }
   ]
 }
